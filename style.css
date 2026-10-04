@@ -68,28 +68,182 @@ nav a:hover {
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 100px;
-
-    max-width: 1000px;
+    gap: 80px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 120px 0;
+    
+}
+.work {
+    max-width: 1100px;
     margin: 0 auto;
     padding: 120px 20px;
 }
+.services {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 120px 20px;
+}
+.contact {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 120px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
 
-
-.about-title p {
+.contact-title p {
     color: #888;
     font-size: 14px;
     letter-spacing: 3px;
     margin-bottom: 20px;
 }
-.about-tile h2 {
+
+.contact-title h2 {
+    font-size: 48px;
+    line-height: 1.1;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-content p {
+    color: #999;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.contact-email {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    border-bottom: 1px solid #555;
+    padding-bottom: 8px;
+    width: fit-content;
+}
+
+.contact-email:hover {
+    border-color: white;
+}
+.services-title {
+    margin-bottom: 60px;
+}
+.service-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.service {
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    padding: 35px 0;
+    border-top: 1px solid #222;
+}
+.service h3 {
+    color: #666;
+    font-size: 14px;
+}
+
+.service h4 {
+    font-size: 24px;
+}
+
+.service p {
+    color: #888;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.services-title p {
+    color: #888;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.services-title h2 {
     font-size: 42px;
     line-height: 1.1;
 }
 
-.about-content p {
-    color: #999;
-    font-size: 18px;
-    line-height: 1.7;
-    margin-bottom: 25px;
+.work-title {
+    margin-bottom: 60px;
+}
+
+.work-title p {
+    color: #888;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.work-title h2 {
+    font-size: 42px;
+    line-height: 1.1;
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project {
+    border: 1px solid #222;
+    padding: 40px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.3s;
+    color:white;
+    text-decoration: none;
+}
+
+.project h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.project p {
+    color: #888;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.project {
+    transition: 0.3s;
+}
+
+.project:hover {
+    border-color: #555;
+    transform: translateY(-5px);
+}
+.project:hover h3 {
+    letter-spacing: 2px;
+}
+.about-title {
+    width: 100%;
+
+}
+
+.about-content {
+    width: 100%;
+
+
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    border-top: 1px solid #222;
+    color: #666;
+    font-size: 13px;
 }
